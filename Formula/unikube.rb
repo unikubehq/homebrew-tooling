@@ -6,7 +6,7 @@ class Unikube < Formula
   sha256 "4935e5fed828694a8d57946837d8ddc173c74337997b93001c93f01c59aec237"
   license "Apache-2.0"
 
-  depends_on "python@3.8"
+  depends_on "python@3.9"
 
   resource "Beaker" do
     url "https://files.pythonhosted.org/packages/04/7b/a3eb9939d931a55c69e4bcaa82dbc64f6df9612c374e782f4ab3c176910e/Beaker-1.11.0.tar.gz"

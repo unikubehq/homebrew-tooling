@@ -249,7 +249,7 @@ class Unikube < Formula
   def install
     venv = virtualenv_create(libexec)
     venv.pip_install resources
-    venv.pip_install resource(inquirer)
+    venv.pip_install resource("inquirer")
     venv.pip_install_and_link buildpath
   end
 

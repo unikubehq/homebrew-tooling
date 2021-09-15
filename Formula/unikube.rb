@@ -91,6 +91,11 @@ class Unikube < Formula
     sha256 "b307872f855b18632ce0c21c5e45be78c0ea7ae4c15c828c20788b26921eb3f6"
   end
 
+  resource "inquirer" do
+    url "https://files.pythonhosted.org/packages/60/10/450a7edfaea3d09a4a7062bd567178bfb66233bae3ee0042934910e180de/inquirer-2.7.0-py2.py3-none-any.whl"
+    sha256 "d15e15de1ad5696f1967e7a23d8e2fce69d2e41a70b008948d676881ed94c3a5"
+  end
+
   resource "kubernetes" do
     url "https://files.pythonhosted.org/packages/9c/f8/0eb10c6939b77788c10449d47d85a4740bb4a5608e1a504807fcdb5babd0/kubernetes-18.20.0.tar.gz"
     sha256 "0c72d00e7883375bd39ae99758425f5e6cb86388417cf7cc84305c211b2192cf"
@@ -247,10 +252,7 @@ class Unikube < Formula
   end
 
   def install
-    venv = virtualenv_create(libexec, "python3")
-    venv.pip_install resources
-    venv.pip_install resource("inquirer")
-    venv.pip_install_and_link buildpath
+    virtualenv_install_with_resources
   end
 
   test do

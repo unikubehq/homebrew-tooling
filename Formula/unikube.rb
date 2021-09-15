@@ -227,8 +227,8 @@ class Unikube < Formula
   end
 
   resource "unikube" do
-    url "https://files.pythonhosted.org/packages/34/0b/a9d2f48767d7a8a937bc093bd7871f4875398c0789ce479268f064c5a9f8/unikube-0.9.0.dev9.tar.gz"
-    sha256 "4935e5fed828694a8d57946837d8ddc173c74337997b93001c93f01c59aec237"
+    url "https://files.pythonhosted.org/packages/a5/1d/4919dfda28fbad6f4ba5144b07a50fb0ce4b870fe6ff520b85b0312749bd/unikube-1.0.1.dev1.tar.gz"
+    sha256 "388b0c3628b2889b63070f51defe2df0f5b35b225c368d8ddd6d16028d50dd70"
   end
 
   resource "urllib3" do

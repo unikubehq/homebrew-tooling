@@ -259,6 +259,6 @@ class Unikube < Formula
   end
 
   test do
-    assert_match "unikube, version 1.0.1.dev2", shell_output("#{bin}/unikube --version")
+    assert_match "unikube, version 1.0.1.dev2", shell_output("#{bin}/unikube version")
   end
 end

@@ -252,7 +252,15 @@ class Unikube < Formula
   end
 
   def install
-    virtualenv_install_with_resources
+    venv = virtualenv_create(libexec, "python3")
+    resources.each do |r|
+      if r.name == "unikube"
+        venv.pip_install_and_link r
+      else
+        venv.pip_install r
+      end
+    end
+    venv.pip_install_and_link buildpath
   end
 
   test do

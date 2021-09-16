@@ -2,8 +2,8 @@ class Unikube < Formula
   include Language::Python::Virtualenv
   desc "CLI to run local Kubernetes development with ease."
   homepage "https://unikube.io/"
-  url "https://files.pythonhosted.org/packages/34/0b/a9d2f48767d7a8a937bc093bd7871f4875398c0789ce479268f064c5a9f8/unikube-0.9.0.dev9.tar.gz"
-  sha256 "4935e5fed828694a8d57946837d8ddc173c74337997b93001c93f01c59aec237"
+  url "https://files.pythonhosted.org/packages/a3/4d/f5f9fc641e308b8f7dfb97c97c6bc62dc53077edc625cef25527dc949fdd/unikube-1.0.1.dev2.tar.gz"
+  sha256 "3e0bf5ec298a3bd529656d294b5a85ef4de0165efaada7e62f65d068b58da2fa"
   license "Apache-2.0"
 
   depends_on "rust" => :build

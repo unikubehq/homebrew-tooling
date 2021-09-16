@@ -16,11 +16,6 @@ class Unikube < Formula
     sha256 "ad5d1c05027ee3be3a482ea39f8cb70339b41e5d6ace0cb861382754076d187e"
   end
 
-  resource "blessed" do
-    url "https://files.pythonhosted.org/packages/20/6b/80d2704532134a0acf513a2804d342686a66a779d28822eb48346dc2a861/blessed-1.17.6.tar.gz"
-    sha256 "a9a774fc6eda05248735b0d86e866d640ca2fef26038878f7e4d23f7749a1e40"
-  end
-
   resource "cachetools" do
     url "https://files.pythonhosted.org/packages/52/ba/619250fa6bc11ce6aa4de0604d45843090a53cd7d10d7253b89669313370/cachetools-4.2.2.tar.gz"
     sha256 "61b5ed1e22a0924aed1d23b478f37e8d52549ff8a961de2909c69bf950020cff"
@@ -91,7 +86,7 @@ class Unikube < Formula
     sha256 "b307872f855b18632ce0c21c5e45be78c0ea7ae4c15c828c20788b26921eb3f6"
   end
 
-  resource "InquirerPy" do
+  resource "inquirerpy" do
     url "https://files.pythonhosted.org/packages/4f/54/b9ac3b1a4fcf76c44d58fc92ee57fe97f9bc44c5a540cb2145299f7f26e8/InquirerPy-0.2.4.tar.gz"
     sha256 "22d50a9d7361377b8eb334964b1d52922a7fc8680864139e35fd64a73e71bb65"
   end
@@ -124,6 +119,11 @@ class Unikube < Formula
   resource "promise" do
     url "https://files.pythonhosted.org/packages/cf/9c/fb5d48abfe5d791cd496e4242ebcf87a4bb2e0c3dcd6e0ae68c11426a528/promise-2.3.tar.gz"
     sha256 "dfd18337c523ba4b6a58801c164c1904a9d4d1b1747c7d5dbf45b693a49d93d0"
+  end
+
+  resource "prompt-toolkit" do
+    url "https://files.pythonhosted.org/packages/b4/56/9ab5868f34ab2657fba7e2192f41316252ab04edbbeb2a8583759960a1a7/prompt_toolkit-3.0.20.tar.gz"
+    sha256 "eb71d5a6b72ce6db177af4a7d4d7085b99756bf656d98ffcc4fecd36850eea6c"
   end
 
   resource "pyasn1" do
@@ -166,11 +166,6 @@ class Unikube < Formula
     sha256 "0123cacc1627ae19ddf3c27a5de5bd67ee4586fbdd6440d9748f8abb483d3e86"
   end
 
-  resource "python-editor" do
-    url "https://files.pythonhosted.org/packages/0a/85/78f4a216d28343a67b7397c99825cff336330893f00601443f7c7b2f2234/python-editor-1.0.4.tar.gz"
-    sha256 "51fda6bcc5ddbbb7063b2af7509e43bd84bfc32a4ff71349ec7847713882327b"
-  end
-
   resource "python-slugify" do
     url "https://files.pythonhosted.org/packages/bc/a4/57893fbaf7cbf303a4f2307564cf83855a5f2cc34544656e7263125a0d1e/python-slugify-5.0.2.tar.gz"
     sha256 "f13383a0b9fcbe649a1892b9c8eb4f8eab1d6d84b84bb7a624317afa98159cab"
@@ -179,11 +174,6 @@ class Unikube < Formula
   resource "PyYAML" do
     url "https://files.pythonhosted.org/packages/a0/a4/d63f2d7597e1a4b55aa3b4d6c5b029991d3b824b5bd331af8d4ab1ed687d/PyYAML-5.4.1.tar.gz"
     sha256 "607774cbba28732bfa802b54baa7484215f530991055bb562efbed5b2f20a45e"
-  end
-
-  resource "readchar" do
-    url "https://files.pythonhosted.org/packages/16/2b/0cd0ba53d6dcdc4d69dcff68970c9b1347cc1d7f1c17ed4c15ec3a71a6e5/readchar-3.0.4.tar.gz"
-    sha256 "3ce642ade5b61efee273b3c4bf55c77a84398178842627c74fcb796e1666ab13"
   end
 
   resource "requests" do
@@ -226,6 +216,11 @@ class Unikube < Formula
     sha256 "eb1d13f25760052e8931f2ef80aaf6045a6cceb47514db8beab24cded16f13a7"
   end
 
+  resource "text-unidecode" do
+    url "https://files.pythonhosted.org/packages/ab/e2/e9a00f0ccb71718418230718b3d900e71a5d16e701a3dae079a21e9cd8f8/text-unidecode-1.3.tar.gz"
+    sha256 "bad6603bb14d279193107714b288be206cac565dfa49aa5b105294dd5c4aab93"
+  end
+
   resource "tinydb" do
     url "https://files.pythonhosted.org/packages/cc/e7/9066ce33e2fe6450e9c5c2cfe3717e792147d71f2247a4395f0bf92b148e/tinydb-3.15.2.tar.gz"
     sha256 "f273d9b6d8b1b5e1d094a6eb8b72851b39b81099293344132c73332b60e3b893"
@@ -234,11 +229,6 @@ class Unikube < Formula
   resource "typing-extensions" do
     url "https://files.pythonhosted.org/packages/aa/55/62e2d4934c282a60b4243a950c9dbfa01ae7cac0e8d6c0b5315b87432c81/typing_extensions-3.10.0.0.tar.gz"
     sha256 "50b6f157849174217d0656f99dc82fe932884fb250826c18350e159ec6cdf342"
-  end
-
-  resource "unikube" do
-    url "https://files.pythonhosted.org/packages/a3/4d/f5f9fc641e308b8f7dfb97c97c6bc62dc53077edc625cef25527dc949fdd/unikube-1.0.1.dev2.tar.gz"
-    sha256 "3e0bf5ec298a3bd529656d294b5a85ef4de0165efaada7e62f65d068b58da2fa"
   end
 
   resource "urllib3" do

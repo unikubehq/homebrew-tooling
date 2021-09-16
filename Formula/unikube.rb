@@ -91,9 +91,9 @@ class Unikube < Formula
     sha256 "b307872f855b18632ce0c21c5e45be78c0ea7ae4c15c828c20788b26921eb3f6"
   end
 
-  resource "inquirer" do
-    url "https://files.pythonhosted.org/packages/60/10/450a7edfaea3d09a4a7062bd567178bfb66233bae3ee0042934910e180de/inquirer-2.7.0-py2.py3-none-any.whl"
-    sha256 "d15e15de1ad5696f1967e7a23d8e2fce69d2e41a70b008948d676881ed94c3a5"
+  resource "InquirerPy" do
+    url "https://files.pythonhosted.org/packages/4f/54/b9ac3b1a4fcf76c44d58fc92ee57fe97f9bc44c5a540cb2145299f7f26e8/InquirerPy-0.2.4.tar.gz"
+    sha256 "22d50a9d7361377b8eb334964b1d52922a7fc8680864139e35fd64a73e71bb65"
   end
 
   resource "kubernetes" do
@@ -232,8 +232,8 @@ class Unikube < Formula
   end
 
   resource "unikube" do
-    url "https://files.pythonhosted.org/packages/a5/1d/4919dfda28fbad6f4ba5144b07a50fb0ce4b870fe6ff520b85b0312749bd/unikube-1.0.1.dev1.tar.gz"
-    sha256 "388b0c3628b2889b63070f51defe2df0f5b35b225c368d8ddd6d16028d50dd70"
+    url "https://files.pythonhosted.org/packages/a3/4d/f5f9fc641e308b8f7dfb97c97c6bc62dc53077edc625cef25527dc949fdd/unikube-1.0.1.dev2.tar.gz"
+    sha256 "3e0bf5ec298a3bd529656d294b5a85ef4de0165efaada7e62f65d068b58da2fa"
   end
 
   resource "urllib3" do
@@ -256,6 +256,6 @@ class Unikube < Formula
   end
 
   test do
-    assert_match "unikube, version 0.9.0.dev9", shell_output("#{bin}/unikube --version")
+    assert_match "unikube, version 1.0.1.dev2", shell_output("#{bin}/unikube --version")
   end
 end

@@ -2,8 +2,8 @@ class Unikube < Formula
   include Language::Python::Virtualenv
   desc "CLI to run local Kubernetes development with ease."
   homepage "https://unikube.io/"
-  url "https://files.pythonhosted.org/packages/a3/4d/f5f9fc641e308b8f7dfb97c97c6bc62dc53077edc625cef25527dc949fdd/unikube-1.0.1.dev2.tar.gz"
-  sha256 "3e0bf5ec298a3bd529656d294b5a85ef4de0165efaada7e62f65d068b58da2fa"
+  url "https://files.pythonhosted.org/packages/82/02/38b62659040b0fc9e5ec7354373a6778a0aa2ec4d57380cb38a993869fb8/unikube-1.0.1.dev4.tar.gz"
+  sha256 "42b1a4bd9e94e0f775a066aed643df239a999585ae0d88e6281597ea14f8d93a"
   license "Apache-2.0"
 
   depends_on "rust" => :build
@@ -17,8 +17,8 @@ class Unikube < Formula
   end
 
   resource "cachetools" do
-    url "https://files.pythonhosted.org/packages/52/ba/619250fa6bc11ce6aa4de0604d45843090a53cd7d10d7253b89669313370/cachetools-4.2.2.tar.gz"
-    sha256 "61b5ed1e22a0924aed1d23b478f37e8d52549ff8a961de2909c69bf950020cff"
+    url "https://files.pythonhosted.org/packages/d7/ed/9798dbc96a968c286911fb17406710a4662456c69b6934bac76bfa2030ff/cachetools-4.2.3.tar.gz"
+    sha256 "0a3d3556c2c3befdbba2f93b78792c199c66201c999e97947ea0b7437758246b"
   end
 
   resource "certifi" do
@@ -67,8 +67,8 @@ class Unikube < Formula
   end
 
   resource "google-auth" do
-    url "https://files.pythonhosted.org/packages/1a/ce/32db215f3f2a1b839514db8cc73e988519ffae1d310b41eff50dc5fcbceb/google-auth-2.0.1.tar.gz"
-    sha256 "ea1af050b3e06eb73e4470f704d23007307bc0e87c13e015f6b90460f1407bd3"
+    url "https://files.pythonhosted.org/packages/b7/9d/e563bb9cf7977a47e52af600b6102e786188bbe1fce293e8da8eca0f6a1d/google-auth-2.2.1.tar.gz"
+    sha256 "6dc8173abd50f25b6e62fc5b42802c96fc7cd9deb9bfeeb10a79f5606225cdf4"
   end
 
   resource "gql" do
@@ -142,8 +142,8 @@ class Unikube < Formula
   end
 
   resource "pycryptodomex" do
-    url "https://files.pythonhosted.org/packages/82/e2/a0f9f5452a59bafaa3420585f22b58a8566c4717a88c139af2276bb5695d/pycryptodomex-3.10.1.tar.gz"
-    sha256 "541cd3e3e252fb19a7b48f420b798b53483302b7fe4d9954c947605d0a263d62"
+    url "https://files.pythonhosted.org/packages/a3/33/1e5040f7c82bce5db00a4101c159339263069717b1155b4b8fa710d19721/pycryptodomex-3.10.4.tar.gz"
+    sha256 "acd3498a8ccf8ad20ce7daa5f7f5e6521465eeceb026f28a6adb0228dd9fcc6e"
   end
 
   resource "pydantic" do
@@ -227,13 +227,13 @@ class Unikube < Formula
   end
 
   resource "typing-extensions" do
-    url "https://files.pythonhosted.org/packages/aa/55/62e2d4934c282a60b4243a950c9dbfa01ae7cac0e8d6c0b5315b87432c81/typing_extensions-3.10.0.0.tar.gz"
-    sha256 "50b6f157849174217d0656f99dc82fe932884fb250826c18350e159ec6cdf342"
+    url "https://files.pythonhosted.org/packages/ed/12/c5079a15cf5c01d7f4252b473b00f7e68ee711be605b9f001528f0298b98/typing_extensions-3.10.0.2.tar.gz"
+    sha256 "49f75d16ff11f1cd258e1b988ccff82a3ca5570217d7ad8c5f48205dd99a677e"
   end
 
   resource "urllib3" do
-    url "https://files.pythonhosted.org/packages/4f/5a/597ef5911cb8919efe4d86206aa8b2658616d676a7088f0825ca08bd7cb8/urllib3-1.26.6.tar.gz"
-    sha256 "f57b4c16c62fa2760b7e3d97c35b255512fb6b59a259730f36ba32ce9f8e342f"
+    url "https://files.pythonhosted.org/packages/80/be/3ee43b6c5757cabea19e75b8f46eaf05a2f5144107d7db48c7cf3a864f73/urllib3-1.26.7.tar.gz"
+    sha256 "4987c65554f7a2dbf30c18fd48778ef124af6fab771a377103da0585e2336ece"
   end
 
   resource "wcwidth" do
@@ -259,6 +259,6 @@ class Unikube < Formula
   end
 
   test do
-    assert_match "unikube, version 1.0.1.dev2", shell_output("#{bin}/unikube version")
+    assert_match "unikube, version 1.0.1.dev4", shell_output("#{bin}/unikube version")
   end
 end

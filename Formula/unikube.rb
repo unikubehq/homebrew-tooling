@@ -72,8 +72,8 @@ class Unikube < Formula
   end
 
   resource "gql" do
-    url "https://files.pythonhosted.org/packages/8f/66/f46c70cab5e86e3c5de8b472d1dd1020684842166eb35810ddf85b583a77/gql-0.4.0.tar.gz"
-    sha256 "259b0c66d8dfe61feb06fe45b57713da0fe2e5ca13fa500a1fafc9bf2f195e81"
+    url "https://files.pythonhosted.org/packages/4e/3c/8c84c49dce30d7847a8e2274517ba42af9090a38ffc2f4a6b644d36d7f63/gql-2.0.0.tar.gz"
+    sha256 "fe8d3a08047f77362ddfcfddba7cae377da2dd66f5e61c59820419c9283d4fb5"
   end
 
   resource "graphql-core" do

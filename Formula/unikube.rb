@@ -263,7 +263,7 @@ class Unikube < Formula
 
   end
 
-  devel do
+  head do
     url "https://api.github.com/repos/unikubehq/cli/zipball/1.0.1-dev8"
     version "1.0.1-dev8"
     sha256 "ce3541d20e9b7ec810f7120f1a11bb18c4e43073849dd1fe488b2faae27cc946"

@@ -1,4 +1,5 @@
 class Unikube < Formula
+  include Language::Python::Virtualenv
   desc     "CLI to run local Kubernetes development with ease."
   homepage "https://unikube.io/"
   license "Apache-2.0"

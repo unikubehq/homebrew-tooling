@@ -265,9 +265,9 @@ class Unikube < Formula
   end
 
   head do
-    url "https://api.github.com/repos/unikubehq/cli/zipball/1.0.1-dev8"
-    version "1.0.1-dev8"
-    sha256 "3cdaeb0a367a2aa635f7ba07b4a51bd8ea46cd8977b51d0a898137de2d8e0701"
+    url "https://api.github.com/repos/unikubehq/cli/zipball/1.0.1-dev9"
+    version "1.0.1-dev9"
+    sha256 "7d0ca2d40b263361ed3afd651db96e31243608e00d71de77fcf1d5126be69d5d"
       resource "Beaker" do
     url "https://files.pythonhosted.org/packages/04/7b/a3eb9939d931a55c69e4bcaa82dbc64f6df9612c374e782f4ab3c176910e/Beaker-1.11.0.tar.gz"
     sha256 "ad5d1c05027ee3be3a482ea39f8cb70339b41e5d6ace0cb861382754076d187e"
@@ -294,8 +294,8 @@ class Unikube < Formula
   end
 
   resource "click" do
-    url "https://files.pythonhosted.org/packages/27/6f/be940c8b1f1d69daceeb0032fee6c34d7bd70e3e649ccac0951500b4720e/click-7.1.2.tar.gz"
-    sha256 "d2b5255c7c6349bc1bd1e59e08cd12acbbd63ce649f2588755783aa94dfb6b1a"
+    url "https://files.pythonhosted.org/packages/f4/09/ad003f1e3428017d1c3da4ccc9547591703ffea548626f47ec74509c5824/click-8.0.3.tar.gz"
+    sha256 "410e932b050f5eed773c4cda94de75971c89cdb3155a72a0831139a79e5ecb5b"
   end
 
   resource "click-spinner" do
@@ -343,6 +343,11 @@ class Unikube < Formula
     sha256 "b307872f855b18632ce0c21c5e45be78c0ea7ae4c15c828c20788b26921eb3f6"
   end
 
+  resource "importlib-metadata" do
+    url "https://files.pythonhosted.org/packages/f0/70/ca3dd67cdd368b957e73a8156f7e1a10339f9813e314cb8b4549526070da/importlib_metadata-4.8.1.tar.gz"
+    sha256 "f284b3e11256ad1e5d03ab86bb2ccd6f5339688ff17a4d797a0fe7df326f23b1"
+  end
+
   resource "inquirerpy" do
     url "https://files.pythonhosted.org/packages/4f/54/b9ac3b1a4fcf76c44d58fc92ee57fe97f9bc44c5a540cb2145299f7f26e8/InquirerPy-0.2.4.tar.gz"
     sha256 "22d50a9d7361377b8eb334964b1d52922a7fc8680864139e35fd64a73e71bb65"
@@ -379,8 +384,8 @@ class Unikube < Formula
   end
 
   resource "prompt-toolkit" do
-    url "https://files.pythonhosted.org/packages/b4/56/9ab5868f34ab2657fba7e2192f41316252ab04edbbeb2a8583759960a1a7/prompt_toolkit-3.0.20.tar.gz"
-    sha256 "eb71d5a6b72ce6db177af4a7d4d7085b99756bf656d98ffcc4fecd36850eea6c"
+    url "https://files.pythonhosted.org/packages/b7/bb/2629a132aab8eb43f9fefa89bd91481fbe2aeca8b32e58bc114a62d4e826/prompt_toolkit-3.0.21.tar.gz"
+    sha256 "27f13ff4e4850fe8f860b77414c7880f67c6158076a7b099062cc8570f1562e5"
   end
 
   resource "pyasn1" do
@@ -489,8 +494,8 @@ class Unikube < Formula
   end
 
   resource "unikube" do
-    url "https://files.pythonhosted.org/packages/f7/d0/49e0ab10c21ec0f81db320159a48e2fe388a77e0c54e8540461d70f31c2f/unikube-1.0.1.dev8.tar.gz"
-    sha256 "2fe489a6d67c4d8145767cce77dc40ae50c5338cc5bf523a0802b653477645c4"
+    url "https://files.pythonhosted.org/packages/36/8d/e6a800a3cbb674491a874cc1daa8ee0ee3f79a634099c521bfb4656f9ad5/unikube-1.0.1.dev9.tar.gz"
+    sha256 "85e3a670f0200c7bf84f1e5dc4e24b4b098bd2ad137082fc3d919fddbc646869"
   end
 
   resource "urllib3" do
@@ -506,6 +511,11 @@ class Unikube < Formula
   resource "websocket-client" do
     url "https://files.pythonhosted.org/packages/4e/8f/b5c45af5a1def38b07c09a616be932ad49c35ebdc5e3cbf93966d7ed9750/websocket-client-1.2.1.tar.gz"
     sha256 "8dfb715d8a992f5712fff8c843adae94e22b22a99b2c5e6b0ec4a1a981cc4e0d"
+  end
+
+  resource "zipp" do
+    url "https://files.pythonhosted.org/packages/02/bf/0d03dbdedb83afec081fefe86cae3a2447250ef1a81ac601a9a56e785401/zipp-3.6.0.tar.gz"
+    sha256 "71c644c5369f4a6e07636f0aa966270449561fcea2e3d6747b8d23efaa9d7832"
   end
 
   end

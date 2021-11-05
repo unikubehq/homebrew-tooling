@@ -9,17 +9,12 @@ class Unikube < Formula
   depends_on "openssl@1.1"
 
   stable do
-    url "https://api.github.com/repos/unikubehq/cli/zipball/1.0.0"
-    version "1.0.0"
-    sha256 "cbbc01be24adbfd06cdc18d9670be07142b93343aac61269cca7f28bf8150013"
+    url "https://api.github.com/repos/unikubehq/cli/zipball/1.0.1"
+    version "1.0.1"
+    sha256 "05e21230e2471e393389bbd4aa53cda0b9d0aa6e0b492f98e70939299414d989"
       resource "Beaker" do
     url "https://files.pythonhosted.org/packages/04/7b/a3eb9939d931a55c69e4bcaa82dbc64f6df9612c374e782f4ab3c176910e/Beaker-1.11.0.tar.gz"
     sha256 "ad5d1c05027ee3be3a482ea39f8cb70339b41e5d6ace0cb861382754076d187e"
-  end
-
-  resource "blessed" do
-    url "https://files.pythonhosted.org/packages/20/6b/80d2704532134a0acf513a2804d342686a66a779d28822eb48346dc2a861/blessed-1.17.6.tar.gz"
-    sha256 "a9a774fc6eda05248735b0d86e866d640ca2fef26038878f7e4d23f7749a1e40"
   end
 
   resource "cachetools" do
@@ -37,14 +32,19 @@ class Unikube < Formula
     sha256 "920f0d66a896c2d99f0adbb391f990a84091179542c205fa53ce5787aff87954"
   end
 
-  resource "chardet" do
-    url "https://files.pythonhosted.org/packages/ee/2d/9cdc2b527e127b4c9db64b86647d567985940ac3698eeabc7ffaccb4ea61/chardet-4.0.0.tar.gz"
-    sha256 "0d6f53a15db4120f2b08c94f11e7d93d2c911ee118b6b30a04ec3ee8310179fa"
+  resource "charset-normalizer" do
+    url "https://files.pythonhosted.org/packages/9f/c5/334c019f92c26e59637bb42bd14a190428874b2b2de75a355da394cf16c1/charset-normalizer-2.0.7.tar.gz"
+    sha256 "e019de665e2bcf9c2b64e2e5aa025fa991da8720daa3c1138cadd2fd1856aed0"
   end
 
   resource "click" do
-    url "https://files.pythonhosted.org/packages/27/6f/be940c8b1f1d69daceeb0032fee6c34d7bd70e3e649ccac0951500b4720e/click-7.1.2.tar.gz"
-    sha256 "d2b5255c7c6349bc1bd1e59e08cd12acbbd63ce649f2588755783aa94dfb6b1a"
+    url "https://files.pythonhosted.org/packages/f4/09/ad003f1e3428017d1c3da4ccc9547591703ffea548626f47ec74509c5824/click-8.0.3.tar.gz"
+    sha256 "410e932b050f5eed773c4cda94de75971c89cdb3155a72a0831139a79e5ecb5b"
+  end
+
+  resource "click-didyoumean" do
+    url "https://files.pythonhosted.org/packages/2f/a7/822fbc659be70dcb75a91fb91fec718b653326697d0e9907f4f90114b34f/click-didyoumean-0.3.0.tar.gz"
+    sha256 "f184f0d851d96b6d29297354ed981b7dd71df7ff500d82fa6d11f0856bee8035"
   end
 
   resource "click-spinner" do
@@ -58,8 +58,8 @@ class Unikube < Formula
   end
 
   resource "cryptography" do
-    url "https://files.pythonhosted.org/packages/cc/98/8a258ab4787e6f835d350639792527d2eb7946ff9fc0caca9c3f4cf5dcfe/cryptography-3.4.8.tar.gz"
-    sha256 "94cc5ed4ceaefcbe5bf38c8fba6a21fc1d365bb8fb826ea1688e3370b2e24a1c"
+    url "https://files.pythonhosted.org/packages/10/91/90b8d4cd611ac2aa526290ae4b4285aa5ea57ee191c63c2f3d04170d7683/cryptography-35.0.0.tar.gz"
+    sha256 "9933f28f70d0517686bd7de36166dda42094eac49415459d9bdf5e7df3e0086d"
   end
 
   resource "defusedxml" do
@@ -73,13 +73,13 @@ class Unikube < Formula
   end
 
   resource "google-auth" do
-    url "https://files.pythonhosted.org/packages/0c/69/504d2b70d10075c76499807b479ef5c3ffec672aadf8029412dda08abebc/google-auth-2.3.0.tar.gz"
-    sha256 "2800f6dfad29c6ced5faf9ca0c38ea8ba1ebe2559b10c029bd021e3de3301627"
+    url "https://files.pythonhosted.org/packages/36/52/699d14b97ae4b1572c8e742c499afbac83b326e908ac26d602f7cbd16ffe/google-auth-2.3.3.tar.gz"
+    sha256 "d83570a664c10b97a1dc6f8df87e5fdfff012f48f62be131e449c20dfc32630e"
   end
 
   resource "gql" do
-    url "https://files.pythonhosted.org/packages/8f/66/f46c70cab5e86e3c5de8b472d1dd1020684842166eb35810ddf85b583a77/gql-0.4.0.tar.gz"
-    sha256 "259b0c66d8dfe61feb06fe45b57713da0fe2e5ca13fa500a1fafc9bf2f195e81"
+    url "https://files.pythonhosted.org/packages/4e/3c/8c84c49dce30d7847a8e2274517ba42af9090a38ffc2f4a6b644d36d7f63/gql-2.0.0.tar.gz"
+    sha256 "fe8d3a08047f77362ddfcfddba7cae377da2dd66f5e61c59820419c9283d4fb5"
   end
 
   resource "graphql-core" do
@@ -88,18 +88,23 @@ class Unikube < Formula
   end
 
   resource "idna" do
-    url "https://files.pythonhosted.org/packages/ea/b7/e0e3c1c467636186c39925827be42f16fee389dc404ac29e930e9136be70/idna-2.10.tar.gz"
-    sha256 "b307872f855b18632ce0c21c5e45be78c0ea7ae4c15c828c20788b26921eb3f6"
+    url "https://files.pythonhosted.org/packages/62/08/e3fc7c8161090f742f504f40b1bccbfc544d4a4e09eb774bf40aafce5436/idna-3.3.tar.gz"
+    sha256 "9d643ff0a55b762d5cdb124b8eaa99c66322e2157b69160bc32796e824360e6d"
   end
 
-  resource "inquirer" do
-    url "https://files.pythonhosted.org/packages/84/c9/3d9b224fe0169c41170a3545ba557a9fe8cfe1c3d7f8d2d9a62a5550aa74/inquirer-2.7.0.tar.gz"
-    sha256 "e819188de0ca7985a99c282176c6f50fb08b0d33867fd1965d3f3e97d6c8f83f"
+  resource "importlib-metadata" do
+    url "https://files.pythonhosted.org/packages/f0/70/ca3dd67cdd368b957e73a8156f7e1a10339f9813e314cb8b4549526070da/importlib_metadata-4.8.1.tar.gz"
+    sha256 "f284b3e11256ad1e5d03ab86bb2ccd6f5339688ff17a4d797a0fe7df326f23b1"
+  end
+
+  resource "inquirerpy" do
+    url "https://files.pythonhosted.org/packages/90/b7/e07e951ad8449df0c08abff3139fa5c836f2ef20ffb90cb7ad100d9a0c4f/InquirerPy-0.3.0.tar.gz"
+    sha256 "3f45515dfb58c590759df91ae9534f9391f241480cc535e7e134fb3c3bd3d269"
   end
 
   resource "kubernetes" do
-    url "https://files.pythonhosted.org/packages/9c/f8/0eb10c6939b77788c10449d47d85a4740bb4a5608e1a504807fcdb5babd0/kubernetes-18.20.0.tar.gz"
-    sha256 "0c72d00e7883375bd39ae99758425f5e6cb86388417cf7cc84305c211b2192cf"
+    url "https://files.pythonhosted.org/packages/74/33/769340198633fc2d985f1c9d853a834b236c7b5f71113a2ca32955cb7847/kubernetes-19.15.0.tar.gz"
+    sha256 "08c93f300a9837104282ecc81458b903a56444c5c1ec3d990d237557312af47f"
   end
 
   resource "Mako" do
@@ -118,13 +123,23 @@ class Unikube < Formula
   end
 
   resource "oic" do
-    url "https://files.pythonhosted.org/packages/96/ac/ace3ccbacf3858c484a78a55ec0368d2ecce9fcf84475c3f49790d278311/oic-1.2.1.tar.gz"
-    sha256 "2946eb554b35e18f3031b29b7666821bbaac4d4a6e58a3c8fdd484f1a9465eb0"
+    url "https://files.pythonhosted.org/packages/7f/1d/81cb0c148cac458f745c75c71e83746b2aee79fbe2cbe9f9e5541c68ee97/oic-1.3.0.tar.gz"
+    sha256 "9e591c2ffdfaf19f1ba4fad0f893adc72ff971fe47c7f54c0b9831a8371c1820"
+  end
+
+  resource "pfzy" do
+    url "https://files.pythonhosted.org/packages/85/c9/ca3b9b0b0cb1488abedde4977d6d824c148f51d9149426e1c4aebf1a6b4b/pfzy-0.3.3.tar.gz"
+    sha256 "3efd83e49d854830369173b44e64a2cd9adcb9d5382698a792474c7d18e2fe32"
   end
 
   resource "promise" do
     url "https://files.pythonhosted.org/packages/cf/9c/fb5d48abfe5d791cd496e4242ebcf87a4bb2e0c3dcd6e0ae68c11426a528/promise-2.3.tar.gz"
     sha256 "dfd18337c523ba4b6a58801c164c1904a9d4d1b1747c7d5dbf45b693a49d93d0"
+  end
+
+  resource "prompt-toolkit" do
+    url "https://files.pythonhosted.org/packages/53/96/b3bff620964869c07252fc2eac4e7e2dd48aea07314d932d21cfd92428da/prompt_toolkit-3.0.22.tar.gz"
+    sha256 "449f333dd120bd01f5d296a8ce1452114ba3a71fae7288d2f0ae2c918764fa72"
   end
 
   resource "pyasn1" do
@@ -148,8 +163,8 @@ class Unikube < Formula
   end
 
   resource "pydantic" do
-    url "https://files.pythonhosted.org/packages/2f/91/c0829599e8281492e40ff69a0d88340713a37fb0facd187fabfab53d6915/pydantic-1.7.4.tar.gz"
-    sha256 "0a1abcbd525fbb52da58c813d54c2ec706c31a91afdb75411a73dd1dec036595"
+    url "https://files.pythonhosted.org/packages/b9/d2/12a808613937a6b98cd50d6467352f01322dc0d8ca9fb5b94441625d6684/pydantic-1.8.2.tar.gz"
+    sha256 "26464e57ccaafe72b7ad156fdaa4e9b9ef051f69e175dbbb463283000c05ab7b"
   end
 
   resource "pyjwkest" do
@@ -158,18 +173,13 @@ class Unikube < Formula
   end
 
   resource "PyJWT" do
-    url "https://files.pythonhosted.org/packages/ef/68/d610e2e10bc8336a033a6e0f0401341106ee9ed9cb0c1571b0d1a8eacf39/PyJWT-2.0.1.tar.gz"
-    sha256 "a5c70a06e1f33d81ef25eecd50d50bd30e34de1ca8b2b9fa3fe0daaabcf69bf7"
+    url "https://files.pythonhosted.org/packages/1d/8e/01bdcfdbb352daaba8ea406d9df149c5bba7dbf70f908d4fa4c269fe6a08/PyJWT-2.3.0.tar.gz"
+    sha256 "b888b4d56f06f6dcd777210c334e69c737be74755d3e5e9ee3fe67dc18a0ee41"
   end
 
   resource "python-dateutil" do
     url "https://files.pythonhosted.org/packages/4c/c4/13b4776ea2d76c115c1d1b84579f3764ee6d57204f6be27119f13a61d0a9/python-dateutil-2.8.2.tar.gz"
     sha256 "0123cacc1627ae19ddf3c27a5de5bd67ee4586fbdd6440d9748f8abb483d3e86"
-  end
-
-  resource "python-editor" do
-    url "https://files.pythonhosted.org/packages/0a/85/78f4a216d28343a67b7397c99825cff336330893f00601443f7c7b2f2234/python-editor-1.0.4.tar.gz"
-    sha256 "51fda6bcc5ddbbb7063b2af7509e43bd84bfc32a4ff71349ec7847713882327b"
   end
 
   resource "python-slugify" do
@@ -182,14 +192,9 @@ class Unikube < Formula
     sha256 "68fb519c14306fec9720a2a5b45bc9f0c8d1b9c72adf45c37baedfcd949c35a2"
   end
 
-  resource "readchar" do
-    url "https://files.pythonhosted.org/packages/16/2b/0cd0ba53d6dcdc4d69dcff68970c9b1347cc1d7f1c17ed4c15ec3a71a6e5/readchar-3.0.4.tar.gz"
-    sha256 "3ce642ade5b61efee273b3c4bf55c77a84398178842627c74fcb796e1666ab13"
-  end
-
   resource "requests" do
-    url "https://files.pythonhosted.org/packages/6b/47/c14abc08432ab22dc18b9892252efaf005ab44066de871e72a38d6af464b/requests-2.25.1.tar.gz"
-    sha256 "27973dd4a904a4f13b263a19c866c13b92a39ed1c964655f025f3f8d3d75b804"
+    url "https://files.pythonhosted.org/packages/e7/01/3569e0b535fb2e4a6c384bdbed00c55b9d78b5084e0fb7f4d0bf523d7670/requests-2.26.0.tar.gz"
+    sha256 "b8aa58f8cf793ffd8782d3d8cb19e66ef36f7aba4353eec859e74678b01b07a7"
   end
 
   resource "requests-oauthlib" do
@@ -233,8 +238,8 @@ class Unikube < Formula
   end
 
   resource "tinydb" do
-    url "https://files.pythonhosted.org/packages/cc/e7/9066ce33e2fe6450e9c5c2cfe3717e792147d71f2247a4395f0bf92b148e/tinydb-3.15.2.tar.gz"
-    sha256 "f273d9b6d8b1b5e1d094a6eb8b72851b39b81099293344132c73332b60e3b893"
+    url "https://files.pythonhosted.org/packages/83/8f/d4d9d4d320d4efb58d723992c32d1384aa6fa685897ee2ee8e90965aba4e/tinydb-4.5.2.tar.gz"
+    sha256 "7d18b2d0217827c188f177cd23df60e5cd5316a717e836a8e21c8c2488262cf5"
   end
 
   resource "typing-extensions" do
@@ -243,8 +248,8 @@ class Unikube < Formula
   end
 
   resource "unikube" do
-    url "https://files.pythonhosted.org/packages/33/d1/8c37f46f649dd3e7ff603b2aef8a838ce84b41137ff52f65d67be3cac47a/unikube-1.0.0.tar.gz"
-    sha256 "bdd30106e14a449bca3e0f2245211a0c01ccb5d1e1e6f6a40a967cf03d5e4b43"
+    url "https://files.pythonhosted.org/packages/ba/10/4da83d891e067c4dcb6143a608e638aedcacb26caa3ee5513785aab44797/unikube-1.0.1.tar.gz"
+    sha256 "4bebc4c025aa0101631ca90680499b849dfe5fb8472013bf9d613d79a47d046c"
   end
 
   resource "urllib3" do
@@ -260,6 +265,11 @@ class Unikube < Formula
   resource "websocket-client" do
     url "https://files.pythonhosted.org/packages/4e/8f/b5c45af5a1def38b07c09a616be932ad49c35ebdc5e3cbf93966d7ed9750/websocket-client-1.2.1.tar.gz"
     sha256 "8dfb715d8a992f5712fff8c843adae94e22b22a99b2c5e6b0ec4a1a981cc4e0d"
+  end
+
+  resource "zipp" do
+    url "https://files.pythonhosted.org/packages/02/bf/0d03dbdedb83afec081fefe86cae3a2447250ef1a81ac601a9a56e785401/zipp-3.6.0.tar.gz"
+    sha256 "71c644c5369f4a6e07636f0aa966270449561fcea2e3d6747b8d23efaa9d7832"
   end
 
   end
@@ -324,8 +334,8 @@ class Unikube < Formula
   end
 
   resource "google-auth" do
-    url "https://files.pythonhosted.org/packages/0c/69/504d2b70d10075c76499807b479ef5c3ffec672aadf8029412dda08abebc/google-auth-2.3.0.tar.gz"
-    sha256 "2800f6dfad29c6ced5faf9ca0c38ea8ba1ebe2559b10c029bd021e3de3301627"
+    url "https://files.pythonhosted.org/packages/36/52/699d14b97ae4b1572c8e742c499afbac83b326e908ac26d602f7cbd16ffe/google-auth-2.3.3.tar.gz"
+    sha256 "d83570a664c10b97a1dc6f8df87e5fdfff012f48f62be131e449c20dfc32630e"
   end
 
   resource "gql" do
@@ -354,8 +364,8 @@ class Unikube < Formula
   end
 
   resource "kubernetes" do
-    url "https://files.pythonhosted.org/packages/9c/f8/0eb10c6939b77788c10449d47d85a4740bb4a5608e1a504807fcdb5babd0/kubernetes-18.20.0.tar.gz"
-    sha256 "0c72d00e7883375bd39ae99758425f5e6cb86388417cf7cc84305c211b2192cf"
+    url "https://files.pythonhosted.org/packages/74/33/769340198633fc2d985f1c9d853a834b236c7b5f71113a2ca32955cb7847/kubernetes-19.15.0.tar.gz"
+    sha256 "08c93f300a9837104282ecc81458b903a56444c5c1ec3d990d237557312af47f"
   end
 
   resource "Mako" do
@@ -384,8 +394,8 @@ class Unikube < Formula
   end
 
   resource "prompt-toolkit" do
-    url "https://files.pythonhosted.org/packages/b7/bb/2629a132aab8eb43f9fefa89bd91481fbe2aeca8b32e58bc114a62d4e826/prompt_toolkit-3.0.21.tar.gz"
-    sha256 "27f13ff4e4850fe8f860b77414c7880f67c6158076a7b099062cc8570f1562e5"
+    url "https://files.pythonhosted.org/packages/53/96/b3bff620964869c07252fc2eac4e7e2dd48aea07314d932d21cfd92428da/prompt_toolkit-3.0.22.tar.gz"
+    sha256 "449f333dd120bd01f5d296a8ce1452114ba3a71fae7288d2f0ae2c918764fa72"
   end
 
   resource "pyasn1" do
@@ -533,6 +543,6 @@ class Unikube < Formula
   end
 
   test do
-    assert_match "unikube, 1.0.0_NUMBER", shell_output("#{bin}/unikube version")
+    assert_match "unikube, 1.0.1_NUMBER", shell_output("#{bin}/unikube version")
   end
 end

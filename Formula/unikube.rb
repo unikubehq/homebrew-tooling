@@ -275,9 +275,9 @@ class Unikube < Formula
   end
 
   head do
-    url "https://api.github.com/repos/unikubehq/cli/zipball/1.1.0-dev2"
-    version "1.1.0-dev2"
-    sha256 "78d1246607b4ed8c1e31bed149dadc21207dc69efd167838ca26335c04bc075f"
+    url "https://api.github.com/repos/unikubehq/cli/zipball/1.1.0-dev3"
+    version "1.1.0-dev3"
+    sha256 "fc9e0f8ff12ca54afd560bef8550a09e67a235f154aec41229b464c6ef44c2ac"
       resource "Beaker" do
     url "https://files.pythonhosted.org/packages/04/7b/a3eb9939d931a55c69e4bcaa82dbc64f6df9612c374e782f4ab3c176910e/Beaker-1.11.0.tar.gz"
     sha256 "ad5d1c05027ee3be3a482ea39f8cb70339b41e5d6ace0cb861382754076d187e"
@@ -514,8 +514,8 @@ class Unikube < Formula
   end
 
   resource "unikube" do
-    url "https://files.pythonhosted.org/packages/3c/b3/1e49bb12f87df36339275c19d40e601066dc4f40823522b6658b8ba4b51d/unikube-1.1.0.dev2.tar.gz"
-    sha256 "54c615df58ee7925732c348d930b6fdc80366956c5b6e9fe1c5bb9096ee91d8e"
+    url "https://files.pythonhosted.org/packages/2b/86/f30bf87b5b62c9cdf1c793d4e89ae1e00e287b6fcd653d9cd6337ad873bf/unikube-1.1.0.dev3.tar.gz"
+    sha256 "64ebb5ee640bbeb5783f197127a4e93d7b380a01ea8f60270a082add27af20ae"
   end
 
   resource "urllib3" do

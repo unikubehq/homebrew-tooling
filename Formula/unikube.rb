@@ -9,9 +9,9 @@ class Unikube < Formula
   depends_on "openssl@1.1"
 
   stable do
-    url "https://api.github.com/repos/unikubehq/cli/zipball/1.2.0"
-    version "1.2.0"
-    sha256 "8d06f09597b255a1076a00813b9be11936d40a54b4cfcbf336ac370e2a88d770"
+    url "https://api.github.com/repos/unikubehq/cli/zipball/1.2.1"
+    version "1.2.1"
+    sha256 "c61fb4b4ee1914974a72e718875240ae5624956868f2a0b107d01cd9dd36a6ba"
       resource "Beaker" do
     url "https://files.pythonhosted.org/packages/04/7b/a3eb9939d931a55c69e4bcaa82dbc64f6df9612c374e782f4ab3c176910e/Beaker-1.11.0.tar.gz"
     sha256 "ad5d1c05027ee3be3a482ea39f8cb70339b41e5d6ace0cb861382754076d187e"
@@ -138,8 +138,8 @@ class Unikube < Formula
   end
 
   resource "prompt-toolkit" do
-    url "https://files.pythonhosted.org/packages/1b/1e/09b545d3608a8092c34132972ec1078d3356381a2c8553fd71d2ed6036a3/prompt_toolkit-3.0.26.tar.gz"
-    sha256 "a51d41a6a45fd9def54365bca8f0402c8f182f2b6f7e29c74d55faeb9fb38ac4"
+    url "https://files.pythonhosted.org/packages/dc/a0/6ffa2262e8f32d4be4b273102c0e0ad16466c1ec4ecbdd46d4c2ce5e8bcb/prompt_toolkit-3.0.27.tar.gz"
+    sha256 "f2b6a8067a4fb959d3677d1ed764cc4e63e0f6f565b9a4fc7edc2b18bf80217b"
   end
 
   resource "pyasn1" do
@@ -158,8 +158,8 @@ class Unikube < Formula
   end
 
   resource "pycryptodomex" do
-    url "https://files.pythonhosted.org/packages/a6/b3/a5e59cd3ad65d4dc470a3a63381d0495885cf1ac7659c83c6bc9e9e79df6/pycryptodomex-3.14.0.tar.gz"
-    sha256 "2d8bda8f949b79b78b293706aa7fc1e5c171c62661252bfdd5d12c70acd03282"
+    url "https://files.pythonhosted.org/packages/24/40/e249ac3845a2333ce50f1bb02299ffb766babdfe80ca9d31e0158ad06afd/pycryptodomex-3.14.1.tar.gz"
+    sha256 "2ce76ed0081fd6ac8c74edc75b9d14eca2064173af79843c24fa62573263c1f2"
   end
 
   resource "pydantic" do
@@ -213,8 +213,8 @@ class Unikube < Formula
   end
 
   resource "semantic-version" do
-    url "https://files.pythonhosted.org/packages/d4/52/3be868c7ed1f408cb822bc92ce17ffe4e97d11c42caafce0589f05844dd0/semantic_version-2.8.5.tar.gz"
-    sha256 "d2cb2de0558762934679b9a104e82eca7af448c9f4974d1f3eeccff651df8a54"
+    url "https://files.pythonhosted.org/packages/cb/56/4aa487b46d09646eb1863faa7026551d8309ece2281794bf13b20f28ab94/semantic_version-2.9.0.tar.gz"
+    sha256 "abf54873553e5e07a6fd4d5f653b781f5ae41297a493666b59dcf214006a12b2"
   end
 
   resource "six" do
@@ -243,8 +243,8 @@ class Unikube < Formula
   end
 
   resource "unikube" do
-    url "https://files.pythonhosted.org/packages/c8/39/a27f04a3534b8a952ca0150716b98db370a9d42b0eed20dac4247918ebf7/unikube-1.2.0.tar.gz"
-    sha256 "0282b55b0020dfc8992da3ac37cf1a494920dd0ab2f57ff66e6b530a46dd53f9"
+    url "https://files.pythonhosted.org/packages/8e/2f/06da11741f1d8e94aef7f329ff2f237129629f0e881256209400243bdf68/unikube-1.2.1.tar.gz"
+    sha256 "bc210861f4ac7ec107a39d1fbecfe4a8457a1a6110e7ddb721ce9d8548d8e7ca"
   end
 
   resource "urllib3" do
@@ -404,8 +404,8 @@ class Unikube < Formula
   end
 
   resource "prompt-toolkit" do
-    url "https://files.pythonhosted.org/packages/1b/1e/09b545d3608a8092c34132972ec1078d3356381a2c8553fd71d2ed6036a3/prompt_toolkit-3.0.26.tar.gz"
-    sha256 "a51d41a6a45fd9def54365bca8f0402c8f182f2b6f7e29c74d55faeb9fb38ac4"
+    url "https://files.pythonhosted.org/packages/dc/a0/6ffa2262e8f32d4be4b273102c0e0ad16466c1ec4ecbdd46d4c2ce5e8bcb/prompt_toolkit-3.0.27.tar.gz"
+    sha256 "f2b6a8067a4fb959d3677d1ed764cc4e63e0f6f565b9a4fc7edc2b18bf80217b"
   end
 
   resource "pyasn1" do
@@ -424,8 +424,8 @@ class Unikube < Formula
   end
 
   resource "pycryptodomex" do
-    url "https://files.pythonhosted.org/packages/a6/b3/a5e59cd3ad65d4dc470a3a63381d0495885cf1ac7659c83c6bc9e9e79df6/pycryptodomex-3.14.0.tar.gz"
-    sha256 "2d8bda8f949b79b78b293706aa7fc1e5c171c62661252bfdd5d12c70acd03282"
+    url "https://files.pythonhosted.org/packages/24/40/e249ac3845a2333ce50f1bb02299ffb766babdfe80ca9d31e0158ad06afd/pycryptodomex-3.14.1.tar.gz"
+    sha256 "2ce76ed0081fd6ac8c74edc75b9d14eca2064173af79843c24fa62573263c1f2"
   end
 
   resource "pydantic" do
@@ -553,6 +553,6 @@ class Unikube < Formula
   end
 
   test do
-    assert_match "unikube, 1.2.0_NUMBER", shell_output("#{bin}/unikube version")
+    assert_match "unikube, 1.2.1_NUMBER", shell_output("#{bin}/unikube version")
   end
 end

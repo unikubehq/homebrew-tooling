@@ -9,9 +9,9 @@ class Unikube < Formula
   depends_on "openssl@1.1"
 
   stable do
-    url "https://api.github.com/repos/unikubehq/cli/zipball/1.2.1"
-    version "1.2.1"
-    sha256 "c61fb4b4ee1914974a72e718875240ae5624956868f2a0b107d01cd9dd36a6ba"
+    url "https://api.github.com/repos/unikubehq/cli/zipball/1.2.2"
+    version "1.2.2"
+    sha256 "d776f97ffaf127e5c6de4c12478701069701afa2a6538c507d3816c7e0b83865"
       resource "Beaker" do
     url "https://files.pythonhosted.org/packages/04/7b/a3eb9939d931a55c69e4bcaa82dbc64f6df9612c374e782f4ab3c176910e/Beaker-1.11.0.tar.gz"
     sha256 "ad5d1c05027ee3be3a482ea39f8cb70339b41e5d6ace0cb861382754076d187e"
@@ -33,8 +33,8 @@ class Unikube < Formula
   end
 
   resource "charset-normalizer" do
-    url "https://files.pythonhosted.org/packages/e8/e8/b6cfd28fb430b2ec9923ad0147025bf8bbdf304b1eb3039b69f1ce44ed6e/charset-normalizer-2.0.11.tar.gz"
-    sha256 "98398a9d69ee80548c762ba991a4728bfc3836768ed226b3945908d1a688371c"
+    url "https://files.pythonhosted.org/packages/56/31/7bcaf657fafb3c6db8c787a865434290b726653c912085fbd371e9b92e1c/charset-normalizer-2.0.12.tar.gz"
+    sha256 "2857e29ff0d34db842cd7ca3230549d1a697f96ee6d3fb071cfa6c7393832597"
   end
 
   resource "click" do
@@ -93,8 +93,8 @@ class Unikube < Formula
   end
 
   resource "importlib-metadata" do
-    url "https://files.pythonhosted.org/packages/f8/41/8ffb059708359ea14a3ec74a99a2bf0cd44a0c983a0c480d9eb7a69438bb/importlib_metadata-4.10.1.tar.gz"
-    sha256 "951f0d8a5b7260e9db5e41d429285b5f451e928479f19d80818878527d36e95e"
+    url "https://files.pythonhosted.org/packages/82/10/600b88188a4e94562cfdf202ef1aca6fedda0723acae8a47376350ec0d5d/importlib_metadata-4.11.1.tar.gz"
+    sha256 "175f4ee440a0317f6e8d81b7f8d4869f93316170a65ad2b007d2929186c8052c"
   end
 
   resource "inquirerpy" do
@@ -103,8 +103,8 @@ class Unikube < Formula
   end
 
   resource "kubernetes" do
-    url "https://files.pythonhosted.org/packages/9b/e4/de04b848035d92acdd84d99278f021975d2beb81e393fa9cbffbffca42ad/kubernetes-21.7.0.tar.gz"
-    sha256 "c9849afc2eafdce60efa210049ee7a94e7ef6cf3a7afa14a69b3bf0447825977"
+    url "https://files.pythonhosted.org/packages/f1/29/2d08946c6f1b94b420f6bc44574081167237e351332fb3384ca42cfc21e2/kubernetes-22.6.0.tar.gz"
+    sha256 "8578afa0fd4e7e86cfa4eeec204e4bad8a2c109ce52f85f8f3c593e9b0d47960"
   end
 
   resource "Mako" do
@@ -138,8 +138,8 @@ class Unikube < Formula
   end
 
   resource "prompt-toolkit" do
-    url "https://files.pythonhosted.org/packages/dc/a0/6ffa2262e8f32d4be4b273102c0e0ad16466c1ec4ecbdd46d4c2ce5e8bcb/prompt_toolkit-3.0.27.tar.gz"
-    sha256 "f2b6a8067a4fb959d3677d1ed764cc4e63e0f6f565b9a4fc7edc2b18bf80217b"
+    url "https://files.pythonhosted.org/packages/37/34/c34c376882305c5051ed7f086daf07e68563d284015839bfb74d6e61d402/prompt_toolkit-3.0.28.tar.gz"
+    sha256 "9f1cd16b1e86c2968f2519d7fb31dd9d669916f515612c269d14e9ed52b51650"
   end
 
   resource "pyasn1" do
@@ -183,8 +183,8 @@ class Unikube < Formula
   end
 
   resource "python-slugify" do
-    url "https://files.pythonhosted.org/packages/bc/a4/57893fbaf7cbf303a4f2307564cf83855a5f2cc34544656e7263125a0d1e/python-slugify-5.0.2.tar.gz"
-    sha256 "f13383a0b9fcbe649a1892b9c8eb4f8eab1d6d84b84bb7a624317afa98159cab"
+    url "https://files.pythonhosted.org/packages/b9/1b/f2d89e911b8234e6902b2065b1db5a375ee0867e4c65997a6c9fc584d77f/python-slugify-6.0.1.tar.gz"
+    sha256 "ba72aa9d9f0514c0c3dd4430442f698ccc27a24d19630473663a71e3ec606bc1"
   end
 
   resource "PyYAML" do
@@ -238,13 +238,13 @@ class Unikube < Formula
   end
 
   resource "typing-extensions" do
-    url "https://files.pythonhosted.org/packages/0d/4a/60ba3706797b878016f16edc5fbaf1e222109e38d0fa4d7d9312cb53f8dd/typing_extensions-4.0.1.tar.gz"
-    sha256 "4ca091dea149f945ec56afb48dae714f21e8692ef22a395223bcd328961b6a0e"
+    url "https://files.pythonhosted.org/packages/b1/5a/8b5fbb891ef3f81fc923bf3cb4a578c0abf9471eb50ce0f51c74212182ab/typing_extensions-4.1.1.tar.gz"
+    sha256 "1a9462dcc3347a79b1f1c0271fbe79e844580bb598bafa1ed208b94da3cdcd42"
   end
 
   resource "unikube" do
-    url "https://files.pythonhosted.org/packages/8e/2f/06da11741f1d8e94aef7f329ff2f237129629f0e881256209400243bdf68/unikube-1.2.1.tar.gz"
-    sha256 "bc210861f4ac7ec107a39d1fbecfe4a8457a1a6110e7ddb721ce9d8548d8e7ca"
+    url "https://files.pythonhosted.org/packages/0a/2f/596d930108bb030449f585ea210d222e453940af4a519f750f2141b6622c/unikube-1.2.2.tar.gz"
+    sha256 "c38017f05b5c97506101f83ddaf37a3569e573b88ea2c2f3285bb0fe86070e9b"
   end
 
   resource "urllib3" do
@@ -299,8 +299,8 @@ class Unikube < Formula
   end
 
   resource "charset-normalizer" do
-    url "https://files.pythonhosted.org/packages/e8/e8/b6cfd28fb430b2ec9923ad0147025bf8bbdf304b1eb3039b69f1ce44ed6e/charset-normalizer-2.0.11.tar.gz"
-    sha256 "98398a9d69ee80548c762ba991a4728bfc3836768ed226b3945908d1a688371c"
+    url "https://files.pythonhosted.org/packages/56/31/7bcaf657fafb3c6db8c787a865434290b726653c912085fbd371e9b92e1c/charset-normalizer-2.0.12.tar.gz"
+    sha256 "2857e29ff0d34db842cd7ca3230549d1a697f96ee6d3fb071cfa6c7393832597"
   end
 
   resource "click" do
@@ -359,8 +359,8 @@ class Unikube < Formula
   end
 
   resource "importlib-metadata" do
-    url "https://files.pythonhosted.org/packages/f8/41/8ffb059708359ea14a3ec74a99a2bf0cd44a0c983a0c480d9eb7a69438bb/importlib_metadata-4.10.1.tar.gz"
-    sha256 "951f0d8a5b7260e9db5e41d429285b5f451e928479f19d80818878527d36e95e"
+    url "https://files.pythonhosted.org/packages/82/10/600b88188a4e94562cfdf202ef1aca6fedda0723acae8a47376350ec0d5d/importlib_metadata-4.11.1.tar.gz"
+    sha256 "175f4ee440a0317f6e8d81b7f8d4869f93316170a65ad2b007d2929186c8052c"
   end
 
   resource "inquirerpy" do
@@ -369,8 +369,8 @@ class Unikube < Formula
   end
 
   resource "kubernetes" do
-    url "https://files.pythonhosted.org/packages/9b/e4/de04b848035d92acdd84d99278f021975d2beb81e393fa9cbffbffca42ad/kubernetes-21.7.0.tar.gz"
-    sha256 "c9849afc2eafdce60efa210049ee7a94e7ef6cf3a7afa14a69b3bf0447825977"
+    url "https://files.pythonhosted.org/packages/f1/29/2d08946c6f1b94b420f6bc44574081167237e351332fb3384ca42cfc21e2/kubernetes-22.6.0.tar.gz"
+    sha256 "8578afa0fd4e7e86cfa4eeec204e4bad8a2c109ce52f85f8f3c593e9b0d47960"
   end
 
   resource "Mako" do
@@ -404,8 +404,8 @@ class Unikube < Formula
   end
 
   resource "prompt-toolkit" do
-    url "https://files.pythonhosted.org/packages/dc/a0/6ffa2262e8f32d4be4b273102c0e0ad16466c1ec4ecbdd46d4c2ce5e8bcb/prompt_toolkit-3.0.27.tar.gz"
-    sha256 "f2b6a8067a4fb959d3677d1ed764cc4e63e0f6f565b9a4fc7edc2b18bf80217b"
+    url "https://files.pythonhosted.org/packages/37/34/c34c376882305c5051ed7f086daf07e68563d284015839bfb74d6e61d402/prompt_toolkit-3.0.28.tar.gz"
+    sha256 "9f1cd16b1e86c2968f2519d7fb31dd9d669916f515612c269d14e9ed52b51650"
   end
 
   resource "pyasn1" do
@@ -553,6 +553,6 @@ class Unikube < Formula
   end
 
   test do
-    assert_match "unikube, 1.2.1_NUMBER", shell_output("#{bin}/unikube version")
+    assert_match "unikube, 1.2.2_NUMBER", shell_output("#{bin}/unikube version")
   end
 end

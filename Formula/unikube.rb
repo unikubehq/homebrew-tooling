@@ -9,9 +9,9 @@ class Unikube < Formula
   depends_on "openssl@1.1"
 
   stable do
-    url "https://api.github.com/repos/unikubehq/cli/zipball/1.2.3"
-    version "1.2.3"
-    sha256 "be7044a7c4932d3fd22fa516acd2c22d8641919dc51c228653d83082f03077b5"
+    url "https://api.github.com/repos/unikubehq/cli/zipball/1.2.4"
+    version "1.2.4"
+    sha256 "2958c6ff2811b66c68f29a1c65c29dcace22eec42fdd65ce53c71eb219b73c14"
       resource "Beaker" do
     url "https://files.pythonhosted.org/packages/04/7b/a3eb9939d931a55c69e4bcaa82dbc64f6df9612c374e782f4ab3c176910e/Beaker-1.11.0.tar.gz"
     sha256 "ad5d1c05027ee3be3a482ea39f8cb70339b41e5d6ace0cb861382754076d187e"
@@ -38,8 +38,8 @@ class Unikube < Formula
   end
 
   resource "click" do
-    url "https://files.pythonhosted.org/packages/f4/09/ad003f1e3428017d1c3da4ccc9547591703ffea548626f47ec74509c5824/click-8.0.3.tar.gz"
-    sha256 "410e932b050f5eed773c4cda94de75971c89cdb3155a72a0831139a79e5ecb5b"
+    url "https://files.pythonhosted.org/packages/dd/cf/706c1ad49ab26abed0b77a2f867984c1341ed7387b8030a6aa914e2942a0/click-8.0.4.tar.gz"
+    sha256 "8458d7b1287c5fb128c90e23381cf99dcde74beaf6c7ff6384ce84d6fe090adb"
   end
 
   resource "click-didyoumean" do
@@ -202,6 +202,11 @@ class Unikube < Formula
     sha256 "75beac4a47881eeb94d5ea5d6ad31ef88856affe2332b9aafb52c6452ccf0d7a"
   end
 
+  resource "requests-toolbelt" do
+    url "https://files.pythonhosted.org/packages/28/30/7bf7e5071081f761766d46820e52f4b16c8a08fef02d2eb4682ca7534310/requests-toolbelt-0.9.1.tar.gz"
+    sha256 "968089d4584ad4ad7c171454f0a5c6dac23971e9472521ea3b6d49d610aa6fc0"
+  end
+
   resource "retrying" do
     url "https://files.pythonhosted.org/packages/44/ef/beae4b4ef80902f22e3af073397f079c96969c69b2c7d52a57ea9ae61c9d/retrying-1.3.3.tar.gz"
     sha256 "08c039560a6da2fe4f2c426d0766e284d3b736e355f8dd24b37367b0bb41973b"
@@ -233,8 +238,8 @@ class Unikube < Formula
   end
 
   resource "tinydb" do
-    url "https://files.pythonhosted.org/packages/eb/a4/e920bfd56095f168d7cabba87bf9ba7f00708e292e671ba558f357cfca62/tinydb-4.6.1.tar.gz"
-    sha256 "0d5400f5e5ae368a84d57cb234456f1cf70430fd39bcd77ccd568fea91ff2a4e"
+    url "https://files.pythonhosted.org/packages/77/b3/2ab727ab4062800731c2e4d773358c6c25f8d630affa3e3ccdb21dc40d68/tinydb-4.7.0.tar.gz"
+    sha256 "357eb7383dee6915f17b00596ec6dd2a890f3117bf52be28a4c516aeee581100"
   end
 
   resource "typing-extensions" do
@@ -243,8 +248,8 @@ class Unikube < Formula
   end
 
   resource "unikube" do
-    url "https://files.pythonhosted.org/packages/0a/2f/596d930108bb030449f585ea210d222e453940af4a519f750f2141b6622c/unikube-1.2.2.tar.gz"
-    sha256 "c38017f05b5c97506101f83ddaf37a3569e573b88ea2c2f3285bb0fe86070e9b"
+    url "https://files.pythonhosted.org/packages/90/46/91e7bffef70755b869ffc35e2c3a75b22f0270a1051b9381c8005386cab5/unikube-1.2.4.tar.gz"
+    sha256 "bf7f49c32a9b006f1e71c376b8e7a806d08d983ba00c7953fe231754532a918a"
   end
 
   resource "urllib3" do
@@ -553,6 +558,6 @@ class Unikube < Formula
   end
 
   test do
-    assert_match "unikube, 1.2.3_NUMBER", shell_output("#{bin}/unikube version")
+    assert_match "unikube, 1.2.4_NUMBER", shell_output("#{bin}/unikube version")
   end
 end

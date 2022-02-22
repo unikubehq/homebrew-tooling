@@ -9,9 +9,9 @@ class Unikube < Formula
   depends_on "openssl@1.1"
 
   stable do
-    url "https://api.github.com/repos/unikubehq/cli/zipball/1.2.5"
-    version "1.2.5"
-    sha256 "3d96299687299fa347f0377c861e63b6bebe49ef292fcff72eaff80a722334ef"
+    url "https://api.github.com/repos/unikubehq/cli/zipball/1.2.6"
+    version "1.2.6"
+    sha256 "1044816f60852a9c35659fa6673390d713c23718c18892609df4d9513ecefb09"
       resource "Beaker" do
     url "https://files.pythonhosted.org/packages/04/7b/a3eb9939d931a55c69e4bcaa82dbc64f6df9612c374e782f4ab3c176910e/Beaker-1.11.0.tar.gz"
     sha256 "ad5d1c05027ee3be3a482ea39f8cb70339b41e5d6ace0cb861382754076d187e"
@@ -558,6 +558,6 @@ class Unikube < Formula
   end
 
   test do
-    assert_match "unikube, 1.2.5_NUMBER", shell_output("#{bin}/unikube version")
+    assert_match "unikube, 1.2.6_NUMBER", shell_output("#{bin}/unikube version")
   end
 end

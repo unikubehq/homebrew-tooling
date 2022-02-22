@@ -9,9 +9,9 @@ class Unikube < Formula
   depends_on "openssl@1.1"
 
   stable do
-    url "https://api.github.com/repos/unikubehq/cli/zipball/1.2.4"
-    version "1.2.4"
-    sha256 "2958c6ff2811b66c68f29a1c65c29dcace22eec42fdd65ce53c71eb219b73c14"
+    url "https://api.github.com/repos/unikubehq/cli/zipball/1.2.5"
+    version "1.2.5"
+    sha256 "3d96299687299fa347f0377c861e63b6bebe49ef292fcff72eaff80a722334ef"
       resource "Beaker" do
     url "https://files.pythonhosted.org/packages/04/7b/a3eb9939d931a55c69e4bcaa82dbc64f6df9612c374e782f4ab3c176910e/Beaker-1.11.0.tar.gz"
     sha256 "ad5d1c05027ee3be3a482ea39f8cb70339b41e5d6ace0cb861382754076d187e"
@@ -248,8 +248,8 @@ class Unikube < Formula
   end
 
   resource "unikube" do
-    url "https://files.pythonhosted.org/packages/90/46/91e7bffef70755b869ffc35e2c3a75b22f0270a1051b9381c8005386cab5/unikube-1.2.4.tar.gz"
-    sha256 "bf7f49c32a9b006f1e71c376b8e7a806d08d983ba00c7953fe231754532a918a"
+    url "https://files.pythonhosted.org/packages/99/7f/70117963dec08a562aa092909265fab9fd7ff9566129aa0460f71ef1b82c/unikube-1.2.5.tar.gz"
+    sha256 "8fa8a0f30f044e0ca7ad4160fcd2057d76bfff2054c6be2a359a54394bcef8f0"
   end
 
   resource "urllib3" do
@@ -558,6 +558,6 @@ class Unikube < Formula
   end
 
   test do
-    assert_match "unikube, 1.2.4_NUMBER", shell_output("#{bin}/unikube version")
+    assert_match "unikube, 1.2.5_NUMBER", shell_output("#{bin}/unikube version")
   end
 end

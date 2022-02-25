@@ -9,9 +9,9 @@ class Unikube < Formula
   depends_on "openssl@1.1"
 
   stable do
-    url "https://api.github.com/repos/unikubehq/cli/zipball/1.2.8"
-    version "1.2.8"
-    sha256 "ee5383b342ec7e434118852fe17dfbe76a68c9474e702c591543bf163879f68e"
+    url "https://api.github.com/repos/unikubehq/cli/zipball/1.2.9"
+    version "1.2.9"
+    sha256 "87f3d10d2ab5ec1db494e6400059593421a15451a4913c8e3aed2de4d4b1b50e"
       resource "Beaker" do
     url "https://files.pythonhosted.org/packages/04/7b/a3eb9939d931a55c69e4bcaa82dbc64f6df9612c374e782f4ab3c176910e/Beaker-1.11.0.tar.gz"
     sha256 "ad5d1c05027ee3be3a482ea39f8cb70339b41e5d6ace0cb861382754076d187e"
@@ -103,8 +103,8 @@ class Unikube < Formula
   end
 
   resource "kubernetes" do
-    url "https://files.pythonhosted.org/packages/f1/29/2d08946c6f1b94b420f6bc44574081167237e351332fb3384ca42cfc21e2/kubernetes-22.6.0.tar.gz"
-    sha256 "8578afa0fd4e7e86cfa4eeec204e4bad8a2c109ce52f85f8f3c593e9b0d47960"
+    url "https://files.pythonhosted.org/packages/9b/e4/de04b848035d92acdd84d99278f021975d2beb81e393fa9cbffbffca42ad/kubernetes-21.7.0.tar.gz"
+    sha256 "c9849afc2eafdce60efa210049ee7a94e7ef6cf3a7afa14a69b3bf0447825977"
   end
 
   resource "Mako" do
@@ -248,8 +248,8 @@ class Unikube < Formula
   end
 
   resource "unikube" do
-    url "https://files.pythonhosted.org/packages/39/3b/3b9f1baac156ad2791504d5ae0f05390b88706894fe9eef75bc0cb995378/unikube-1.2.8.tar.gz"
-    sha256 "19c6f7618c7f269d5a69b60036a6808b336e022735e29cd27f7d852d6a6f9511"
+    url "https://files.pythonhosted.org/packages/00/e1/1b77fb7bcda4cc46086419115084d6582a0fe22b1b99c1a5a656f73da99a/unikube-1.2.9.tar.gz"
+    sha256 "a1b9b61cee51b60b8958c8cf067abfe05f9c20d0688923b2233f480a2bbbe985"
   end
 
   resource "urllib3" do
@@ -558,6 +558,6 @@ class Unikube < Formula
   end
 
   test do
-    assert_match "unikube, 1.2.8_NUMBER", shell_output("#{bin}/unikube version")
+    assert_match "unikube, 1.2.9_NUMBER", shell_output("#{bin}/unikube version")
   end
 end

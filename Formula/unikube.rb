@@ -9,9 +9,9 @@ class Unikube < Formula
   depends_on "openssl@1.1"
 
   stable do
-    url "https://api.github.com/repos/unikubehq/cli/zipball/1.2.6"
-    version "1.2.6"
-    sha256 "1044816f60852a9c35659fa6673390d713c23718c18892609df4d9513ecefb09"
+    url "https://api.github.com/repos/unikubehq/cli/zipball/1.2.7"
+    version "1.2.7"
+    sha256 "6bdfc68c9678037144646d9945607e4c5122682e3d19ab7bbfe7e2b8bfb9a227"
       resource "Beaker" do
     url "https://files.pythonhosted.org/packages/04/7b/a3eb9939d931a55c69e4bcaa82dbc64f6df9612c374e782f4ab3c176910e/Beaker-1.11.0.tar.gz"
     sha256 "ad5d1c05027ee3be3a482ea39f8cb70339b41e5d6ace0cb861382754076d187e"
@@ -183,8 +183,8 @@ class Unikube < Formula
   end
 
   resource "python-slugify" do
-    url "https://files.pythonhosted.org/packages/b9/1b/f2d89e911b8234e6902b2065b1db5a375ee0867e4c65997a6c9fc584d77f/python-slugify-6.0.1.tar.gz"
-    sha256 "ba72aa9d9f0514c0c3dd4430442f698ccc27a24d19630473663a71e3ec606bc1"
+    url "https://files.pythonhosted.org/packages/04/49/0d92393e3bb5020b4872b2eae64f6b7db850ed95c4fcb534322f847a0e46/python-slugify-6.1.0.tar.gz"
+    sha256 "eff190e4dfac97d2f8c1890ee682709ecd23650742361687db82d95e1e5e25f5"
   end
 
   resource "PyYAML" do
@@ -248,8 +248,8 @@ class Unikube < Formula
   end
 
   resource "unikube" do
-    url "https://files.pythonhosted.org/packages/99/7f/70117963dec08a562aa092909265fab9fd7ff9566129aa0460f71ef1b82c/unikube-1.2.5.tar.gz"
-    sha256 "8fa8a0f30f044e0ca7ad4160fcd2057d76bfff2054c6be2a359a54394bcef8f0"
+    url "https://files.pythonhosted.org/packages/78/d9/a390e679eeaf81408b7a68b7327ea157b448b9bd835fa148ef0a28b60296/unikube-1.2.7.tar.gz"
+    sha256 "3feb13347fa601c10c2bd726977b2a8f2b460a40c5fc926335f08187bd0716d8"
   end
 
   resource "urllib3" do
@@ -558,6 +558,6 @@ class Unikube < Formula
   end
 
   test do
-    assert_match "unikube, 1.2.6_NUMBER", shell_output("#{bin}/unikube version")
+    assert_match "unikube, 1.2.7_NUMBER", shell_output("#{bin}/unikube version")
   end
 end
